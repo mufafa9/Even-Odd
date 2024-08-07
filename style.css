@@ -1,0 +1,24 @@
+/* Styling the div */
+div {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Styling the input field */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Adding focus effect */
+input[type="number"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
