@@ -1,7 +1,7 @@
 let output;
 let input;
 
-document.getElementById("btn").onclick= function(){
-   input= Document.getElementById("input").value;
-   document.getElementById("h2").textContent=input
+document.getElementById("mybtn").onclick= function(){
+   input= Document.getElementById("myinput").value;
+   document.getElementById("myh2").textContent=input
 };
