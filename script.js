@@ -1,4 +1,6 @@
 let useroutput;
 let input;
 
-document.getElementsByClassName("")
+document.getElementById("btn").onclick= function(){
+    Document.getElementById()
+}
