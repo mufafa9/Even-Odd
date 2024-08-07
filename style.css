@@ -1,4 +1,4 @@
-/* Styling the div */
+
 div {
     margin: 20px;
     padding: 10px;
@@ -7,7 +7,6 @@ div {
     background-color: #f9f9f9;
 }
 
-/* Styling the input field */
 input[type="number"] {
     width: 100%;
     padding: 10px;
@@ -16,7 +15,6 @@ input[type="number"] {
     font-size: 16px;
 }
 
-/* Adding focus effect */
 input[type="number"]:focus {
     border-color: #007BFF;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
