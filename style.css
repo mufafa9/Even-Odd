@@ -30,7 +30,7 @@ input[type="number"]:focus {
     transition: background-color 0.3s; 
     outline: none; 
 }
-#mybtn: hover {
+#mybtn hover {
     background-color: #45a049;
 }
 
