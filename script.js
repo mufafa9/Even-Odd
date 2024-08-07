@@ -1,6 +1,7 @@
-let useroutput;
+let output;
 let input;
 
 document.getElementById("btn").onclick= function(){
-    Document.getElementById()
+   input= Document.getElementById("input").value
+   document.getElementById("")
 }
