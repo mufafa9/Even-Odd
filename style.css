@@ -15,9 +15,9 @@ input[type="number"]:focus {
 }
 #mybtn {
      background-color: #4CAF50;
+}
 
-
-#btn {
+#mybtn {
     background-color: #4CAF50; 
     border: none;
     color: blue; 
