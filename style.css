@@ -1,3 +1,6 @@
+body, html {
+    font-family: Arial, sans-serif;
+}
 
 
 input[type="number"] {
