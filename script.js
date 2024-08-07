@@ -3,5 +3,6 @@ let input;
 
 document.getElementById("btn").onclick= function(){
    input= Document.getElementById("input").value;
-   document.getElementById("h2").textContent=input
+   output=input * 1.609;
+   document.getElementById("h2").textContent=output;
 };
