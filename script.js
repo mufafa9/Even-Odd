@@ -8,10 +8,10 @@ document.getElementById("mybtn").onclick = function () {
   }
 };
 
-// Adding an event listener for keypress
+
 document.getElementById("input").addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    // "Enter" instead of "ENTER"
+  
     let input = document.getElementById("input").value;
     if (input) {
       let output = input / 1.609; // Correct conversion factor
