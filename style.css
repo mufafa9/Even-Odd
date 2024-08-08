@@ -1,5 +1,10 @@
 body {
+<<<<<<< Updated upstream
   background: linear-gradient(90deg, #0a0a0a, #4a4453);
+=======
+
+    background: linear-gradient(90deg, #EEBD89, #D13ABD);
+>>>>>>> Stashed changes
 }
 
 h1 {
