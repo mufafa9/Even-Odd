@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer>
-        document.getElementById("mybtn").onclick = function() {
-            let input = document.getElementById("input").value;
-            if (input) {
-                let output = input / 1.609;
-                document.getElementById("h2").textContent = "Miles: " + output.toFixed(2);
-            } else {
-                document.getElementById("h2").textContent = "Please enter a value.";
-            }
-        };
+      document.getElementById("mybtn").onclick = function () {
+        let input = document.getElementById("input").value;
+        if (input) {
+          let output = input / 1.609;
+          document.getElementById("h2").textContent =
+            "Miles: " + output.toFixed(2);
+        } else {
+          document.getElementById("h2").textContent = "Please enter a value.";
+        }
+      };
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Smart Counter</h1>
-    <input type="number" id="input">
+    <input type="number" id="input" />
     <button id="mybtn" name="button">Convert</button>
     <h2 id="h2">Miles:</h2>
-</body>
+  </body>
 </html>
