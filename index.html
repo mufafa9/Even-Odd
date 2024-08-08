@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our project</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        input, button {
-            margin: 10px;
-        }
-    </style>
+    <script defer>
+        document.getElementById("mybtn").onclick = function() {
+            let input = document.getElementById("input").value;
+            if (input) {
+                let output = input / 1.609;
+                document.getElementById("h2").textContent = "Miles: " + output.toFixed(2);
+            } else {
+                document.getElementById("h2").textContent = "Please enter a value.";
+            }
+        };
+    </script>
 </head>
 <body>
     <h1>Smart Counter</h1>
