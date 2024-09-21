@@ -4,10 +4,13 @@ let submitParentElem = document.querySelector(".submitParentElem");
 let resultOfNum = document.querySelector(".resultOfNum");
 
 const checkOddOrEven = (e) => {
-    e.preventDefault(); // prevent the form from submitting
-    if (inputElement.value) {
-        resultOfNum.textContent = `${inputElement.value} is ${inputElement.value % 2 === 0 ? 'Even' : 'Odd'}`;
+    e.preventDefault(); // prevent form submission
+    const number = parseInt(inputElement.value);
+    if (!isNaN(number)) { // Validate that it's a number
+        resultOfNum.textContent = `${number} is ${number % 2 === 0 ? 'Even' : 'Odd'}`;
         inputElement.value = '';
+    } else {
+        resultOfNum.textContent = "Please enter a valid number.";
     }
 };
 
