@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth; /* Add smooth scrolling */
 }
 
 body {
@@ -109,17 +110,17 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center; /* Add this for better alignment */
 }
 
 h1 {
     font-size: 3.3rem;
     color: gray;
-    text-align: center;
     padding-bottom: 5rem;
 }
 
 .input {
-    width: clamp(40rem, 50rem, 50%);
+    width: clamp(30rem, 50rem, 80%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,10 +177,39 @@ button {
     font-size: 1.6rem;
     font-weight: 500;
     cursor: pointer;
+    transition: background-color .3s, color .3s; /* Add transition for hover */
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
 }
 
 h2 {
     padding-top: 3rem;
     letter-spacing: 1px;
     font-size: 3rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 2rem;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    input, button {
+        font-size: 1.4rem;
+    }
 }
