@@ -1,42 +1,43 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our project</title>
-    <link rel="stylesheet" href="style.css" />
-    
-    <script src="script.js" defer></script>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-      }
-      h1,
-      h2 {
-        text-align: center;
-      }
-      input,
-      button {
-        margin: 10px;
-      }
-    </style>
-  </head>
-  <body>
-            <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <h1>Even or odd</h1>
-    <input type="number" id="input" />
-    <button id="mybtn" name="button">Check</button>
-    <h2 id="h2"></h2>
 
-  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Odd Or Even</a>
+            <ol>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h1>Let's Check Your Number!</h1>
+        <form class="input">
+            <div class="input-group">
+                <input type="number" class="inputElem" required autofocus />
+                <label for="inputElem">Enter Number</label>
+            </div>
+            <div class="button submitParentElem" style="display: none;">
+                <button type="submit" class="submitBtn">Check</button>
+            </div>
+        </form>
+        <h2 class="resultOfNum"></h2>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

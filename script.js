@@ -1,24 +1,19 @@
-function checkEvenOrOdd() {
-  const input = document.getElementById("input").value;
-  const outputElement = document.getElementById("h2");
+let inputElement = document.querySelector(".inputElem");
+let submitButton = document.querySelector(".submitBtn");
+let submitParentElem = document.querySelector(".submitParentElem");
+let resultOfNum = document.querySelector(".resultOfNum");
 
-  if (input) {
-    if (input % 2 === 0) {
-      outputElement.textContent = input + " is even.";
-    } else {
-      outputElement.textContent = input + " is odd.";
+const checkOddOrEven = (e) => {
+    e.preventDefault(); // prevent the form from submitting
+    if (inputElement.value) {
+        resultOfNum.textContent = `${inputElement.value} is ${inputElement.value % 2 === 0 ? 'Even' : 'Odd'}`;
+        inputElement.value = '';
     }
-  } else {
-    outputElement.textContent = "Please enter a value.";
-  }
-}
+};
 
-// Add event listener for button click
-document.getElementById("mybtn").addEventListener("click", checkEvenOrOdd);
+const showAndHideSubmitBtn = () => {
+    submitParentElem.style.display = inputElement.value ? 'inline-block' : 'none';
+};
 
-// Add event listener for 'Enter' key press
-document.getElementById("input").addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    checkEvenOrOdd();
-  }
-});
+inputElement.addEventListener('keyup', showAndHideSubmitBtn);
+submitButton.addEventListener('click', checkOddOrEven);
